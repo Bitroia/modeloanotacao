@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <svg viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg">
+        <!-- Cabeça -->
+        <path
+          id="head"
+          d="
+            M100 20
+          C80 20, 65 40, 65 60
+          C65 85, 80 105, 100 105
+          C120 105, 135 85, 135 60
+          C135 40, 120 20, 100 20
+          Z"
+          fill="#111"
+        />
+
+        <!-- Olhos (pupilas) -->
+        <circle id="pupilae" cx="88" cy="65" r="4" fill="black" />
+        <circle id="pupilad" cx="112" cy="65" r="4" fill="black" />
+
+        <!-- Narinas -->
+        <circle id="narinae" cx="95" cy="80" r="2.5" fill="black" />
+        <circle id="narinad" cx="105" cy="80" r="2.5" fill="black" />
+
+        <!-- Boca -->
+        <path
+          id="boca"
+          d="
+          M90 92
+          Q100 100 110 92
+          "
+          stroke="black"
+          stroke-width="2"
+          fill="none"
+        />
+
+        <!-- Pescoço -->
+        <path
+          id="neck"
+          d="
+          M80 100
+          C78 115, 78 130, 85 140
+          L115 140
+          C122 130, 122 115, 120 100
+          Z"
+          fill="#111"
+        />
+
+        <!-- Tórax -->
+        <path
+          id="chest"
+          d="
+          M70 110
+          C60 140, 60 180, 75 210
+          L125 210
+          C140 180, 140 140, 130 110
+          Z"
+          fill="#111"
+        />
+
+        <!-- Abdômen -->
+        <path
+          id="abdomen"
+          d="
+          M75 210
+          C70 250, 75 290, 90 320
+          L110 320
+          C125 290, 130 250, 125 210
+          Z"
+          fill="#111"
+        />
+
+        <!-- Braço esquerdo -->
+        <path
+          id="bracoe"
+          d="
+          M60 120
+          C40 160, 40 220, 55 260
+          C65 250, 70 200, 70 150
+          Z"
+          fill="#111"
+        />
+
+        <!-- Braço direito -->
+        <path
+          id="bracod"
+          d="
+          M140 120
+          C160 160, 160 220, 145 260
+          C135 250, 130 200, 130 150
+          Z"
+          fill="#111"
+        />
+
+        <!-- Perna esquerda -->
+        <path
+          id="pernae"
+          d="
+          M90 320
+          C80 360, 80 430, 90 470
+          L100 470
+          C105 430, 105 360, 100 320
+          Z"
+          fill="#111"
+        />
+
+        <!-- Perna direita -->
+        <path
+          id="pernad"
+          d="
+          M110 320
+          C120 360, 120 430, 110 470
+          L100 470
+          C95 430, 95 360, 100 320
+          Z"
+          fill="#111"
+        />
+      </svg>
+      <textarea
+        id="output"
+        placeholder="Sua anotação vai aparecer aqui..."
+      ></textarea>
+    </div>
+  </body>
+</html>
